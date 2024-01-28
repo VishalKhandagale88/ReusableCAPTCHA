@@ -51,4 +51,13 @@ public class ReusableCAPTCHA extends JFrame {
 
         return captcha.toString();
     }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+
+            public void run() {
+                new ReusableCAPTCHA().setVisible(true);
+            }
+        });
+    }
 }
