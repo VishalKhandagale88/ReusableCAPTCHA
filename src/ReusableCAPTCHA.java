@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.*;
+
 public class ReusableCAPTCHA extends JFrame {
     private JLabel captchaLabel;
     private JTextField captchaTextField;
@@ -10,5 +12,9 @@ public class ReusableCAPTCHA extends JFrame {
         setSize(500,300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+
+        captchaLabel = new JLabel();
+        captchaLabel.setFont(new Font("Arial",Font.BOLD,20));
+
     }
 }
