@@ -17,6 +17,9 @@ public class ReusableCAPTCHA extends JFrame {
         captchaLabel.setFont(new Font("Arial",Font.BOLD,20));
         captchaLabel.setForeground(Color.RED);
         captchaTextField = new JTextField(10);
+        generateButton = new JButton("Generate Captcha");
+        generateButton.setForeground(Color.GRAY);
+        generateButton.setFont(new Font("Arial",Font.BOLD,20));
 
 
     }
